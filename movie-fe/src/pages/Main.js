@@ -6,7 +6,6 @@ import axios from "axios";
 
 function MovieCard(props) {
   const { title, imageUrl, rating } = props;
-
   return (
     <div className="relative">
       <img src={imageUrl} alt={title} className="w-full" />
@@ -102,11 +101,11 @@ let Main = () => {
       ) : (
         <div className="min-h-screen bg-gray-900">
           <div className="mx-20 pt-4 bg-gray-900 z-30 text-white">
-          <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-bold text-white">Now Playing</h2>
+          <div className="flex py-4 items-center justify-between">
+            <h2 className="text-3xl font-bold text-white">Now Playing</h2>
             <Link
               to="/nowplaying"
-              className="text-sm text-gray-400 hover:text-white"
+              className="text-lg text-gray-400 hover:text-white"
             >
               See All
             </Link>
@@ -132,11 +131,11 @@ let Main = () => {
             </div>
           </div>{" "}
           <div className="mx-20 pt-4 bg-gray-900 z-30 text-white">
-          <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-bold text-white">Up Coming</h2>
+          <div className="flex py-4 items-center justify-between">
+            <h2 className="text-3xl font-bold text-white">Up Coming</h2>
             <Link
               to="/upcoming"
-              className="text-sm text-gray-400 hover:text-white"
+              className="text-lg text-gray-400 hover:text-white"
             >
               See All
             </Link>
@@ -162,11 +161,11 @@ let Main = () => {
             </div>
           </div>{" "}
           <div className="mx-20 pt-4 bg-gray-900 z-30 text-white">
-          <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-bold text-white">Popular</h2>
+          <div className="flex py-4 items-center justify-between">
+            <h2 className="text-3xl font-bold text-white">Popular</h2>
             <Link
               to="/popular"
-              className="text-sm text-gray-400 hover:text-white"
+              className="text-lg text-gray-400 hover:text-white"
             >
               See All
             </Link>
@@ -191,12 +190,12 @@ let Main = () => {
               ))}
             </div>
           </div>{" "}
-          <div className="mx-20 pt-4 bg-gray-900 z-30 text-white">
-          <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-bold text-white">Top Rated</h2>
+          <div className="mx-20 pt-4 pb-12 bg-gray-900 z-30 text-white">
+          <div className="flex py-4  items-center justify-between">
+            <h2 className="text-3xl font-bold text-white">Top Rated</h2>
             <Link
               to="/toprated"
-              className="text-sm text-gray-400 hover:text-white"
+              className="text-lg text-gray-400 hover:text-white"
             >
               See All
             </Link>
